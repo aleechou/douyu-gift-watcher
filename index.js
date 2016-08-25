@@ -53,7 +53,9 @@ setInterval(function(){
 var $output = jQuery(
     "<div style='position:fixed; top:50px; left:10px; width: 300px; height: 400px; background-color:#eee; z-index: 1000;font-Size:18px;background:url(http://ww3.sinaimg.cn/mw690/006qyfFOgw1f75k182pxlj30qo0qowjq.jpg) no-repeat;'>"
         + "<span giftname='赞'>0</span>"
+        + "<span giftname='100鱼丸'>0</span>"
         + "<span giftname='飞机'>0</span>"
+
         + "</div>"
 ).appendTo(document.body)
 
