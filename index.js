@@ -15,6 +15,13 @@ var gainGifts = {
 var startTime = Date.now()
 var messageList = jQuery(".c-list .jschartli").toArray()
 
+function updateGifts(){
+    for(var giftname of gainGifts) {
+        console.log($output.find("span[giftname="+giftname+"]"),"span[giftname="+giftname+"]")
+        $output.find("span[giftname="+giftname+"]").text( gainGifts[giftname] )
+    }
+}
+
 setInterval(function(){
     var newMessageList = jQuery(".c-list .jschartli").toArray()
 
@@ -31,9 +38,8 @@ setInterval(function(){
         if( $gift.size() ){
             var giftName = $gift.text()
             gainGifts[giftName] = (gainGifts[giftName]||0) + 1
-            
-            console.log($output.find("span[giftname="+giftName+"]"),"span[giftname="+giftName+"]")
-            $output.find("span[giftname="+giftName+"]").text( gainGifts[giftName] )
+
+            updateGifts()
         }
 
         //$output.text(JSON.stringify(gainGifts,null,4))
@@ -53,9 +59,11 @@ var $output = jQuery(
 jQuery("<button style='position:fixed; width:100px;height:40px;top:400px;left:200px; z-index: 1001;'>重置</button>")
     .appendTo(document.body)
     .click(function(){
-        gainGifts = {message: 0}
         startTime = Date.now()
-        $output.text(JSON.stringify(gainGifts,null,4))
+        for(var giftname of gainGifts) {
+            gainGifts[giftname] = 0
+        }
+        updateGifts()
     })
 
 // $output.text(JSON.stringify(gainGifts,null,4))
