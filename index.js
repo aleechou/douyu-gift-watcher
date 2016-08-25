@@ -31,6 +31,8 @@ setInterval(function(){
         if( $gift.size() ){
             var giftName = $gift.text()
             gainGifts[giftName] = (gainGifts[giftName]||0) + 1
+            
+            console.log($output.find("span[giftname="+giftName+"]"),"span[giftname="+giftName+"]")
             $output.find("span[giftname="+giftName+"]").text( gainGifts[giftName] )
         }
 
