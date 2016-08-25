@@ -60,7 +60,7 @@ jQuery("<button style='position:fixed; width:100px;height:40px;top:400px;left:20
     .appendTo(document.body)
     .click(function(){
         startTime = Date.now()
-        for(var giftname of gainGifts) {
+        for(var giftname in gainGifts) {
             gainGifts[giftname] = 0
         }
         updateGifts()
