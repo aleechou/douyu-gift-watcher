@@ -16,7 +16,7 @@ var startTime = Date.now()
 var messageList = jQuery(".c-list .jschartli").toArray()
 
 function updateGifts(){
-    for(var giftname of gainGifts) {
+    for(var giftname in gainGifts) {
         console.log($output.find("span[giftname="+giftname+"]"),"span[giftname="+giftname+"]")
         $output.find("span[giftname="+giftname+"]").text( gainGifts[giftname] )
     }
