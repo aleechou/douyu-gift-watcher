@@ -51,15 +51,22 @@ setInterval(function(){
 }, 500)
 
 var $output = jQuery(
-    "<div style='position:fixed; top:50px; left:10px; width: 300px; height: 400px; background-color:#eee; z-index: 1000;font-Size:18px;background:url(http://ww4.sinaimg.cn/mw690/6624c75dgw1f76znl6bebj20gs0jq43o.jpg) no-repeat;'>"
+    "<div style='position:fixed; top:50px; left:10px; width: 768px; height: 864px; background-color:#eee; z-index: 1000;color:#ffffff;font-Size:100px;padding:60px;line-height:220px;background:url(http://ww3.sinaimg.cn/mw690/6624c75dgw1f7d2e9csa4j20qo0u0q7k.jpg) no-repeat;'>"
         + "<p giftname='赞'>0</p>"
-        + "<p giftname='100鱼丸'>0</p>"
+        //+ "<p giftname='100鱼丸'>0</p>"
+        //+ "<p giftname='飞机'>0</p>"
+
+        + "</div>"
+		
+	+ "<div style='position:fixed; top:50px; left:340px; width: 80px; height: 180px; background-color:rgba(255,255,255,0);color:#ffffff;font-family: 微软雅黑;z-index: 1000;font-Size:100px;padding:55px;line-height:1104px;'>"
+        + //"<p giftname='赞'>0</p>"
+        "<p giftname='100鱼丸'>0</p>"
         //+ "<p giftname='飞机'>0</p>"
 
         + "</div>"
 ).appendTo(document.body)
 
-jQuery("<button style='position:fixed; width:100px;height:40px;top:400px;left:200px; z-index: 1001;'>重置</button>")
+jQuery("<button style='position:fixed; width:100px;height:40px;top:480px;left:800px; z-index: 1001;'>重置</button>")
     .appendTo(document.body)
     .click(function(){
         startTime = Date.now()
