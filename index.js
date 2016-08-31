@@ -51,10 +51,10 @@ setInterval(function(){
 }, 500)
 
 var $output = jQuery(
-    "<div style='position:fixed; top:50px; left:10px; width: 300px; height: 400px; background-color:#eee; z-index: 1000;font-Size:18px;background:url(http://ww3.sinaimg.cn/mw690/006qyfFOgw1f75k182pxlj30qo0qowjq.jpg) no-repeat;'>"
+    "<div style='position:fixed; top:50px; left:10px; width: 300px; height: 400px; background-color:#eee; z-index: 1000;font-Size:18px;background:url(http://ww4.sinaimg.cn/mw690/6624c75dgw1f76znl6bebj20gs0jq43o.jpg) no-repeat;'>"
         + "<p giftname='赞'>0</p>"
         + "<p giftname='100鱼丸'>0</p>"
-        + "<p giftname='飞机'>0</p>"
+        //+ "<p giftname='飞机'>0</p>"
 
         + "</div>"
 ).appendTo(document.body)
