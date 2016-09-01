@@ -65,7 +65,7 @@ var $output = jQuery(
      + "</div>"	
 	 
 //右侧字
-	+ "<div style='position:fixed; top:580px; left:385px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; z-index: 1000; text-align:center; font-Size:100px;'>"
+	+ "<div style='position:fixed; top:580px; left:390px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; z-index: 1000; text-align:center; font-Size:100px;'>"
         +//"<p giftname='赞'>0</p>"
         "<p giftname='100鱼丸'>0</p>"
         //+ "<p giftname='飞机'>0</p>"
