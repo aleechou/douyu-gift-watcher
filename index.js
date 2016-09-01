@@ -52,18 +52,26 @@ setInterval(function(){
 
 var $output = jQuery(
     "<div style='position:fixed; top:50px; left:10px; width: 768px; height: 864px; background-color:#eee; z-index: 1000;color:#ffffff;font-Size:100px;padding:60px;line-height:220px;background:url(http://ww3.sinaimg.cn/mw690/6624c75dgw1f7d2e9csa4j20qo0u0q7k.jpg) no-repeat;'>"
-        + "<p giftname='赞'>0</p>"
+        //+ "<p giftname='赞'>0</p>"
         //+ "<p giftname='100鱼丸'>0</p>"
         //+ "<p giftname='飞机'>0</p>"
 
         + "</div>"
-		
-	+ "<div style='position:fixed; top:50px; left:340px; width: 80px; height: 180px; background-color:rgba(255,255,255,0);color:#ffffff;font-family: 微软雅黑;z-index: 1000;font-Size:100px;padding:55px;line-height:1104px;'>"
-        + //"<p giftname='赞'>0</p>"
+//左侧字
+	+ "<div style='position:fixed; top:130px; left:50px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; text-align:center; z-index:1000; font-Size:100px;'>"
+        +//"<p giftname='赞'>0</p>"
         "<p giftname='100鱼丸'>0</p>"
         //+ "<p giftname='飞机'>0</p>"
+     + "</div>"	
+	 
+//右侧字
+	+ "<div style='position:fixed; top:580px; left:385px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; z-index: 1000; text-align:center; font-Size:100px;'>"
+        +//"<p giftname='赞'>0</p>"
+        "<p giftname='100鱼丸'>0</p>"
+        //+ "<p giftname='飞机'>0</p>"
+     + "</div>"
+	
 
-        + "</div>"
 ).appendTo(document.body)
 
 jQuery("<button style='position:fixed; width:100px;height:40px;top:480px;left:800px; z-index: 1001;'>重置</button>")
