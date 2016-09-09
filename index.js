@@ -13,8 +13,8 @@ var gainGifts = {
     message: 0
 }
 var giftValue = {
-    "鱼丸": 0.5 ,
-    "火箭": 2 ,
+    "赞": 1 ,
+    "弱鸡": 2 ,
 }
 var startTime = Date.now()
 var messageList = jQuery(".c-list .jschartli").toArray()
@@ -63,15 +63,15 @@ var $output = jQuery(
         + "</div>"
 //左侧字
 	+ "<div style='position:fixed; top:130px; left:50px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; text-align:center; z-index:1000; font-Size:100px;'>"
-        +//"<p giftname='赞'>0</p>"
-        "<p giftname='100鱼丸'>0</p>"
+        +"<p giftname='弱鸡'>0</p>"
+        //"<p giftname='100鱼丸'>0</p>"
         //+ "<p giftname='飞机'>0</p>"
      + "</div>"	
 	 
 //右侧字
 	+ "<div style='position:fixed; top:580px; left:390px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; z-index: 1000; text-align:center; font-Size:100px;'>"
         +//"<p giftname='赞'>0</p>"
-        "<p giftname='100鱼丸'>0</p>"
+        "<p giftname='赞'>0</p>"
         //+ "<p giftname='飞机'>0</p>"
      + "</div>"
 	
