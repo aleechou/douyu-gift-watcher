@@ -41,7 +41,7 @@ setInterval(function(){
         var $gift = jQuery(message).find("span.gift-name")
         if( $gift.size() ){
             var giftName = $gift.text()
-            gainGifts[giftName] = (gainGifts[giftName]||0) + Math.floor( giftValue[giftName]||1 )
+            gainGifts[giftName] = (gainGifts[giftName]||0) + (giftValue[giftName]||1)
 
             updateGifts()
         }
