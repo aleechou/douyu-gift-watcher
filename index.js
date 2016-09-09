@@ -12,6 +12,10 @@ var messageNum = 0
 var gainGifts = {
     message: 0
 }
+var giftValue = {
+    "鱼丸": 0.5 ,
+    "火箭": 2 ,
+}
 var startTime = Date.now()
 var messageList = jQuery(".c-list .jschartli").toArray()
 
@@ -37,7 +41,7 @@ setInterval(function(){
         var $gift = jQuery(message).find("span.gift-name")
         if( $gift.size() ){
             var giftName = $gift.text()
-            gainGifts[giftName] = (gainGifts[giftName]||0) + 1
+            gainGifts[giftName] = (gainGifts[giftName]||0) + Math.floor( giftValue[giftName]||1 )
 
             updateGifts()
         }
