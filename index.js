@@ -20,10 +20,17 @@ var startTime = Date.now()
 var messageList = jQuery(".c-list .jschartli").toArray()
 
 function updateGifts(){
-    for(var giftname in gainGifts) {
-        // console.log($output.find("[giftname="+giftname+"]"),"[giftname="+giftname+"]")
-        $output.find("[giftname="+giftname+"]").text( gainGifts[giftname] )
-    }
+    $output.find("[giftname]").each(function(){
+        var value = 0
+        ($(this).attr("giftname")||"").split("+").forEach(function(giftname){
+            value+= gainGifts[giftname] || 0
+        })
+        $(this).text(value)
+    })
+    // for(var giftname in gainGifts) {
+    //     // console.log($output.find("[giftname="+giftname+"]"),"[giftname="+giftname+"]")
+    //     $output.find("[giftname="+giftname+"]").text( c )
+    // }
 }
 
 setInterval(function(){
@@ -63,7 +70,7 @@ var $output = jQuery(
         + "</div>"
 //左侧字
 	+ "<div style='position:fixed; top:130px; left:50px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; text-align:center; z-index:1000; font-Size:100px;'>"
-        +"<p giftname='弱鸡'>0</p>"
+        +"<p giftname='弱鸡+赞'>0</p>"
         //"<p giftname='100鱼丸'>0</p>"
         //+ "<p giftname='飞机'>0</p>"
      + "</div>"	
@@ -71,7 +78,7 @@ var $output = jQuery(
 //右侧字
 	+ "<div style='position:fixed; top:580px; left:380px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; z-index: 1000; text-align:center; font-Size:100px;'>"
         +//"<p giftname='赞'>0</p>"
-        "<p giftname='赞'>0</p>"
+        "<p giftname='鱼丸+赞'>0</p>"
         //+ "<p giftname='飞机'>0</p>"
      + "</div>"
 	
