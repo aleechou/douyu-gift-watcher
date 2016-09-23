@@ -22,7 +22,10 @@ var messageList = jQuery(".c-list .jschartli").toArray()
 function updateGifts(){
     $output.find("[giftname]").each(function(){
         var value = 0
-        ($(this).attr("giftname")||"").split("+").forEach(function(giftname){
+        var gifts = ($(this).attr("giftname")||"").split("+")
+        //console.log(gifts)
+
+        gifts.forEach(function(giftname){
             value+= gainGifts[giftname] || 0
         })
         $(this).text(value)
