@@ -55,7 +55,7 @@ setInterval(function(){
 }, 500)
 
 var $output = jQuery(
-    "<div style='position:fixed; top:50px; left:10px; width: 768px; height: 864px; background-color:#eee; z-index: 1000;color:#ffffff;font-Size:100px;padding:60px;line-height:220px;background:url(http://ww3.sinaimg.cn/large/6624c75dgw1f83pra7ya7j20qo0u0n29.jpg) no-repeat;'>"
+    "<div style='position:fixed; top:50px; left:10px; width: 768px; height: 864px; background-color:#eee; z-index: 1000;color:#ffffff;font-Size:100px;padding:60px;line-height:220px;background:url(http://ww3.sinaimg.cn/large/6624c75dgw1f83pyiumn1j20j60lkad4.jpg) no-repeat;'>"
         //+ "<p giftname='赞'>0</p>"
         //+ "<p giftname='100鱼丸'>0</p>"
         //+ "<p giftname='飞机'>0</p>"
