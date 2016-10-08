@@ -15,6 +15,10 @@ var gainGifts = {
 var giftValue = {
     "赞": 1 ,
     "弱鸡": 2 ,
+	"公主裙":1,
+	"王子":1000,
+	"水晶球":1,
+	"女巫":1000,
 }
 var startTime = Date.now()
 var messageList = jQuery(".c-list .jschartli").toArray()
@@ -30,10 +34,7 @@ function updateGifts(){
         })
         $(this).text(value)
     })
-    // for(var giftname in gainGifts) {
-    //     // console.log($output.find("[giftname="+giftname+"]"),"[giftname="+giftname+"]")
-    //     $output.find("[giftname="+giftname+"]").text( c )
-    // }
+
 }
 
 setInterval(function(){
@@ -46,7 +47,6 @@ setInterval(function(){
         }
 
         gainGifts.message++
-        // console.log("found new message：",messageNum)
 
         var $gift = jQuery(message).find("span.gift-name")
         if( $gift.size() ){
@@ -56,7 +56,6 @@ setInterval(function(){
             updateGifts()
         }
 
-        //$output.text(JSON.stringify(gainGifts,null,4))
     }
 
 
@@ -66,23 +65,15 @@ setInterval(function(){
 
 var $output = jQuery(
     "<div style='position:fixed; top:50px; left:10px; width: 768px; height: 864px; background-color:#eee; z-index: 1000;color:#ffffff;font-Size:100px;padding:60px;line-height:220px;background:url(http://ww1.sinaimg.cn/large/6624c75dgw1f83q7thq5vj20j60lkdix.jpg) no-repeat;'>"
-        //+ "<p giftname='赞'>0</p>"
-        //+ "<p giftname='100鱼丸'>0</p>"
-        //+ "<p giftname='飞机'>0</p>"
-
         + "</div>"
 //左侧字
-	+ "<div style='position:fixed; top:130px; left:50px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; text-align:center; z-index:1000; font-Size:100px;'>"
+	+ "<div style='position:fixed; top:130px; left:50px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; text-align:center; z-index:1000; font-Size:80px;'>"
         +"<p giftname='女巫+水晶球'>0</p>"
-        //"<p giftname='100鱼丸'>0</p>"
-        //+ "<p giftname='飞机'>0</p>"
      + "</div>"	
 	 
 //右侧字
-	+ "<div style='position:fixed; top:580px; left:380px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; z-index: 1000; text-align:center; font-Size:100px;'>"
-        +//"<p giftname='赞'>0</p>"
-        "<p giftname='王子+公主裙'>0</p>"
-        //+ "<p giftname='飞机'>0</p>"
+	+ "<div style='position:fixed; top:580px; left:380px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; z-index: 1000; text-align:center; font-Size:80px;'>"
+        +"<p giftname='王子+公主裙'>0</p>"
      + "</div>"
 	
 
