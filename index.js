@@ -13,12 +13,10 @@ var gainGifts = {
     message: 0
 }
 var giftValue = {
-    "赞": 1 ,
-    "弱鸡": 2 ,
-	"公主裙":1,
-	"王子":1000,
-	"水晶球":1,
-	"女巫":1000,
+   "公主裙":1,
+   "王子":1000,
+   "水晶球":1,
+   "女巫":1000,
 }
 var startTime = Date.now()
 var messageList = jQuery(".c-list .jschartli").toArray()
@@ -27,7 +25,6 @@ function updateGifts(){
     $output.find("[giftname]").each(function(){
         var value = 0
         var gifts = ($(this).attr("giftname")||"").split("+")
-        //console.log(gifts)
 
         gifts.forEach(function(giftname){
             value+= gainGifts[giftname] || 0
@@ -55,23 +52,20 @@ setInterval(function(){
 
             updateGifts()
         }
-
     }
 
-
     messageList = newMessageList
-
 }, 500)
 
 var $output = jQuery(
     "<div style='position:fixed; top:50px; left:10px; width: 768px; height: 864px; background-color:#eee; z-index: 1000;color:#ffffff;font-Size:100px;padding:60px;line-height:220px;background:url(http://ww1.sinaimg.cn/large/6624c75dgw1f83q7thq5vj20j60lkdix.jpg) no-repeat;'>"
         + "</div>"
-//左侧字
+//上字
 	+ "<div style='position:fixed; top:130px; left:50px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; text-align:center; z-index:1000; font-Size:80px;'>"
         +"<p giftname='女巫+水晶球'>0</p>"
      + "</div>"	
 	 
-//右侧字
+//下字
 	+ "<div style='position:fixed; top:580px; left:380px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; z-index: 1000; text-align:center; font-Size:80px;'>"
         +"<p giftname='王子+公主裙'>0</p>"
      + "</div>"
@@ -88,5 +82,3 @@ jQuery("<button style='position:fixed; width:100px;height:40px;top:480px;left:80
         }
         updateGifts()
     })
-
-// $output.text(JSON.stringify(gainGifts,null,4))
