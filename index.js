@@ -58,7 +58,7 @@ setInterval(function(){
 }, 500)
 
 var $output = jQuery(
-    "<div style='position:fixed; top:50px; left:10px; width: 768px; height: 864px; background-color:#eee; z-index: 1000;color:#ffffff;font-Size:100px;padding:60px;line-height:220px;background:url(http://ww1.sinaimg.cn/large/6624c75dgw1f83q7thq5vj20j60lkdix.jpg) no-repeat;'>"
+    "<div style='position:fixed; top:50px; left:10px; width: 768px; height: 864px; background-color:#eee; z-index: 1000;color:#ffffff;font-Size:100px;padding:60px;line-height:220px;background:url(http://ww3.sinaimg.cn/large/6624c75dgw1f8m3ztoh1lj20j60lkgpm.jpg) no-repeat;'>"
         + "</div>"
 //上字
 	+ "<div style='position:fixed; top:130px; left:50px; width:280px; height: 180px; background-color:rgba(255,255,255,0); color:#ffffff; font-family: 微软雅黑; text-align:center; z-index:1000; font-Size:80px;'>"
