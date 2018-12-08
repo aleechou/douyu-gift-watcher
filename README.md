@@ -6,5 +6,5 @@
 在浏览器里新建书签，URL 填写:
 
 ```javascript
-javascript: var scriptNode=document.createElement("script"); scriptNode.src="https://rawgit.com/aleechou/douyu-gift-watcher/master/index.js";document.body.appendChild(scriptNode)
+javascript: var scriptNode=document.createElement("script"); scriptNode.src="https://cdn.jsdelivr.net/gh/aleechou/douyu-gift-watcher/index.js";document.body.appendChild(scriptNode)
 ```
